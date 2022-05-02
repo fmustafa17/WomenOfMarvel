@@ -6,6 +6,7 @@ target 'WomenOfMarvel' do
   use_frameworks!
 
   # Pods for WomenOfMarvel
+  pod 'Kingfisher' #For downloading and caching images from the web
 
   target 'WomenOfMarvelTests' do
     inherit! :search_paths

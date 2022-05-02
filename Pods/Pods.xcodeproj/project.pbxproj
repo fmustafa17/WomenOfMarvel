@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		04508F5D1709ADD5008AFFFD444FFA7B /* Pods-WomenOfMarvel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WomenOfMarvel-acknowledgements.markdown"; sourceTree = "<group>"; };
 		05A780B0036A8646DF48C1790335689C /* Pods-WomenOfMarvel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WomenOfMarvel-Info.plist"; sourceTree = "<group>"; };
-		0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods-WomenOfMarvel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WomenOfMarvel"; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A0A3824C5FF17DC35DE0D81371A4AB /* Pods-WomenOfMarvel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WomenOfMarvel-umbrella.h"; sourceTree = "<group>"; };
 		14AE4E5AB0CA94DFC5925AD5EF67550D /* Pods-WomenOfMarvel-WomenOfMarvelUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WomenOfMarvel-WomenOfMarvelUITests"; path = Pods_WomenOfMarvel_WomenOfMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		152CAA98F57025CA726C06CB34A9DDD4 /* Pods-WomenOfMarvel-WomenOfMarvelUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WomenOfMarvel-WomenOfMarvelUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		7D7281D3832A77D1396B64692826C8A3 /* Pods-WomenOfMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WomenOfMarvel.debug.xcconfig"; sourceTree = "<group>"; };
 		8513877454554E182E95B2E586318EA9 /* Pods-WomenOfMarvel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WomenOfMarvel.modulemap"; sourceTree = "<group>"; };
 		963FC839ED612E0120DFC18E61236A46 /* Pods-WomenOfMarvel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WomenOfMarvel-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A28A12F2C499CE0BF1E384E72D6BA5EB /* Pods-WomenOfMarvel-WomenOfMarvelUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WomenOfMarvel-WomenOfMarvelUITests-Info.plist"; sourceTree = "<group>"; };
 		AD38A18B87166FC4DA03CF2BFE97B6E7 /* Pods-WomenOfMarvelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WomenOfMarvelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9526C52C2F847FBC506F5978029E05C /* Pods-WomenOfMarvel-WomenOfMarvelUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WomenOfMarvel-WomenOfMarvelUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		222981B941D9464EB85C95AD251CF8A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods-WomenOfMarvel */,
+				0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods_WomenOfMarvel.framework */,
 				14AE4E5AB0CA94DFC5925AD5EF67550D /* Pods-WomenOfMarvel-WomenOfMarvelUITests */,
 				6A160F585E8F2FC79132737FD5C80EAB /* Pods-WomenOfMarvelTests */,
 			);
@@ -227,7 +227,7 @@
 			);
 			name = "Pods-WomenOfMarvel";
 			productName = Pods_WomenOfMarvel;
-			productReference = 0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods-WomenOfMarvel */;
+			productReference = 0CA6D3ACE6A63BDEB25E4866B7AA27C6 /* Pods_WomenOfMarvel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A297A1B1782376014B92D58583143915 /* Pods-WomenOfMarvelTests */ = {
