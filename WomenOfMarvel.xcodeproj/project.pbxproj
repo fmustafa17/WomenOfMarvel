@@ -22,6 +22,7 @@
 		AD06884428207A10002A0846 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884328207A10002A0846 /* APIManager.swift */; };
 		AD06884628207FCA002A0846 /* WomenOfMarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884528207FCA002A0846 /* WomenOfMarvelViewModel.swift */; };
 		AD06884828209280002A0846 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884728209280002A0846 /* Config.swift */; };
+		AD06884A28209661002A0846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884928209661002A0846 /* Constants.swift */; };
 		E44F7BDA56ECAC4710EC8464 /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A331F0E4AE11C749DD9CB1C /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		AD06884328207A10002A0846 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AD06884528207FCA002A0846 /* WomenOfMarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewModel.swift; sourceTree = "<group>"; };
 		AD06884728209280002A0846 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AD06884928209661002A0846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF0E50FF74C0F21EEDB973 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 				AD0688172820763E002A0846 /* Assets.xcassets */,
 				AD0688192820763E002A0846 /* LaunchScreen.storyboard */,
 				AD06881C2820763E002A0846 /* Info.plist */,
+				AD06884928209661002A0846 /* Constants.swift */,
 			);
 			path = WomenOfMarvel;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				AD068840282078E6002A0846 /* WomenOfMarvelModel.swift in Sources */,
 				AD0688112820763C002A0846 /* SceneDelegate.swift in Sources */,
 				AD06884628207FCA002A0846 /* WomenOfMarvelViewModel.swift in Sources */,
+				AD06884A28209661002A0846 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

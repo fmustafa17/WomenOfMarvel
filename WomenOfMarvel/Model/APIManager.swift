@@ -17,13 +17,6 @@ struct APIManager {
         return jsonDecoder
     }()
 
-    let apiKey = "apikey"
-    let hashKey = "hash"
-    let offsetKey = "offset"
-    let myPrivateKey = "privateKey"
-    let myPublicKey = "publicKey"
-    let timestampKey = "ts"
-
     func getTimestamp() -> String {
         return String(Int(Date().timeIntervalSince1970))
     }
@@ -54,10 +47,10 @@ struct APIManager {
         let timeStamp = String(getTimestamp())
         let md5hash = getMd5(ts: timeStamp)
         let params: [String: Any] = [
-            apiKey: KeychainWrapper.standard.string(forKey: myPublicKey) ?? "",
-            timestampKey: timeStamp,
-            hashKey: md5hash,
-            offsetKey: String(offset)
+            Constants.apiKey: KeychainWrapper.standard.string(forKey: Constants.myPublicKey) ?? "",
+            Constants.timeStampKey: timeStamp,
+            Constants.hashKey: md5hash,
+            Constants.offsetKey: String(offset)
         ]
         return params
     }
