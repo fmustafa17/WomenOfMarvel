@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - WomenOfMarvel
 struct WomenOfMarvel: Codable {
-    let code: Int
+    let code: String
     let status, copyright, attributionText, attributionHTML: String
     let etag: String
     let data: DataClass

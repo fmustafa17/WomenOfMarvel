@@ -7,6 +7,7 @@ target 'WomenOfMarvel' do
 
   # Pods for WomenOfMarvel
   pod 'Kingfisher' #For downloading and caching images from the web
+  pod 'SwiftKeychainWrapper' #For easily grabbing Public and Private Keys from the Keychain
 
   target 'WomenOfMarvelTests' do
     inherit! :search_paths

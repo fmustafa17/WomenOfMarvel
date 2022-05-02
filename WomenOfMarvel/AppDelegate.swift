@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Add API keys into the Keychain
+        if KeychainWrapper.standard.string(forKey: "privateKey") == nil {
+            KeychainWrapper.standard.set(CONFIG.privateKey,
+                                         forKey: "privateKey")
+        }
+
+        if KeychainWrapper.standard.string(forKey: "publicKey") == nil {
+            KeychainWrapper.standard.set(CONFIG.publicKey,
+                                         forKey: "publicKey")
+        }
+
         return true
     }
 
