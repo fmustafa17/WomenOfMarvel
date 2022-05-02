@@ -18,6 +18,8 @@
 		AD0688262820763E002A0846 /* WomenOfMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0688252820763E002A0846 /* WomenOfMarvelTests.swift */; };
 		AD0688302820763E002A0846 /* WomenOfMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06882F2820763E002A0846 /* WomenOfMarvelUITests.swift */; };
 		AD0688322820763E002A0846 /* WomenOfMarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0688312820763E002A0846 /* WomenOfMarvelUITestsLaunchTests.swift */; };
+		AD068840282078E6002A0846 /* WomenOfMarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06883F282078E6002A0846 /* WomenOfMarvelModel.swift */; };
+		AD06884428207A10002A0846 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884328207A10002A0846 /* APIManager.swift */; };
 		E44F7BDA56ECAC4710EC8464 /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A331F0E4AE11C749DD9CB1C /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		AD06882B2820763E002A0846 /* WomenOfMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WomenOfMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD06882F2820763E002A0846 /* WomenOfMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelUITests.swift; sourceTree = "<group>"; };
 		AD0688312820763E002A0846 /* WomenOfMarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD06883F282078E6002A0846 /* WomenOfMarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelModel.swift; sourceTree = "<group>"; };
+		AD06884328207A10002A0846 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF0E50FF74C0F21EEDB973 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,9 +130,11 @@
 		AD06880D2820763C002A0846 /* WomenOfMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				AD06883E282078CD002A0846 /* Model */,
+				AD0688422820792A002A0846 /* View */,
+				AD06884128207921002A0846 /* ViewModel */,
 				AD06880E2820763C002A0846 /* AppDelegate.swift */,
 				AD0688102820763C002A0846 /* SceneDelegate.swift */,
-				AD0688122820763C002A0846 /* ViewController.swift */,
 				AD0688142820763C002A0846 /* Main.storyboard */,
 				AD0688172820763E002A0846 /* Assets.xcassets */,
 				AD0688192820763E002A0846 /* LaunchScreen.storyboard */,
@@ -154,6 +160,30 @@
 			path = WomenOfMarvelUITests;
 			sourceTree = "<group>";
 		};
+		AD06883E282078CD002A0846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD06883F282078E6002A0846 /* WomenOfMarvelModel.swift */,
+				AD06884328207A10002A0846 /* APIManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD06884128207921002A0846 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD0688422820792A002A0846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD0688122820763C002A0846 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C06E27E359573E99427FA493 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +194,6 @@
 				18461665781F14625E5C7F56 /* Pods-WomenOfMarvelTests.debug.xcconfig */,
 				A1B1C3C2C19422C5077610A5 /* Pods-WomenOfMarvelTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -409,6 +438,8 @@
 			files = (
 				AD0688132820763C002A0846 /* ViewController.swift in Sources */,
 				AD06880F2820763C002A0846 /* AppDelegate.swift in Sources */,
+				AD06884428207A10002A0846 /* APIManager.swift in Sources */,
+				AD068840282078E6002A0846 /* WomenOfMarvelModel.swift in Sources */,
 				AD0688112820763C002A0846 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
