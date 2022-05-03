@@ -23,8 +23,8 @@ struct APIManager {
 
     func getMd5(ts: String) -> String {
         let length = Int(CC_MD5_DIGEST_LENGTH) // CommonCrypto
-        let privateKey = KeychainWrapper.standard.string(forKey: myPrivateKey) ?? ""
-        let publicKey = KeychainWrapper.standard.string(forKey: myPublicKey) ?? ""
+        let privateKey = KeychainWrapper.standard.string(forKey: Constants.myPrivateKey) ?? ""
+        let publicKey = KeychainWrapper.standard.string(forKey: Constants.myPublicKey) ?? ""
         let concatenatedString = ts + privateKey + publicKey
         let messageData = concatenatedString.data(using: .utf8)!
         var digestData = Data(count: length)
