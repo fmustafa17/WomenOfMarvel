@@ -38,6 +38,8 @@ class ViewController: UIViewController {
                self?.comicBookTitle.text = comicDetails?.data.results[0].title
                self?.comicBookDescription.text = comicDetails?.data.results[0].textObjects[0].text
 
+               // due to insecure URL, added workaround in the Info.plist
+               // source: https://stackoverflow.com/questions/32631184/the-resource-could-not-be-loaded-because-the-app-transport-security-policy-requi
                self?.loadImageViaKingfisher(with: comicDetails?.data.results[0].thumbnail.path,
                                             of: comicDetails?.data.results[0].thumbnail.thumbnailExtension)
             }
