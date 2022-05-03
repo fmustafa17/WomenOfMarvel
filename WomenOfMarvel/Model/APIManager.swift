@@ -55,7 +55,8 @@ struct APIManager {
         return params
     }
 
-    func sendRequest(_ url: String, parameters: [String: Any], completion: @escaping ([String: Any]?, Error?) -> Void) {
+    /*
+    func sendRequest(_ url: String, parameters: [String: Any], completion: @escaping (WomenOfMarvel?, Error?) -> Void) {
         var components = URLComponents(string: url)!
         components.queryItems = parameters.map { (key, value) in
             URLQueryItem(name: key, value: value as! String)
@@ -79,6 +80,7 @@ struct APIManager {
         }
         task.resume()
     }
+     */
 
     func fetchComicDetails(successHandler: @escaping (WomenOfMarvel) -> Void,
                            errorHandler: @escaping (Error) -> Void) {
@@ -92,15 +94,73 @@ struct APIManager {
         //        let fullRequestURL = baseURL + path + "?apikey=" + apiKey
         let fullRequestURL = "https://gateway.marvel.com/v1/public/comics/1590"
 
-        sendRequest(fullRequestURL, parameters: setParameters(offset: 0)) { responseObject, error in
-                guard let responseObject = responseObject, error == nil else {
-                    print(error ?? "Unknown error")
-                    return
-                }
+        var components = URLComponents(string: fullRequestURL)!
 
-            // use `responseObject` here
-//            print(responseObject)
+        let params = setParameters(offset: 0)
+
+        components.queryItems = params.map { (key, value) in
+            URLQueryItem(name: key, value: value as! String)
         }
+        components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
+        let request = URLRequest(url: components.url!)
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+
+            guard error == nil else {
+                print("error, ", error ?? "Error occurred")
+                return
+            }
+
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    errorHandler(NSError(domain: "", code: 0, userInfo: nil))
+                }
+                return
+            }
+
+            do {
+                let details = try APIManager.jsonDecoder.decode(WomenOfMarvel.self, from: data)
+
+                DispatchQueue.main.async {
+                    print(details)
+                    successHandler(details)
+                }
+            } catch {
+                print("Response:", response!)
+                print(error)
+            }
+        }
+
+        task.resume()
+
+        /*
+
+        sendRequest(fullRequestURL, parameters: setParameters(offset: 0)) { responseObject, error in
+            guard error == nil else {
+                print("error, ", error ?? "Error occurred")
+                return
+            }
+
+            guard let response = responseObject else {
+                print(error ?? "Unknown error")
+                return
+            }
+
+            do {
+                let details = try APIManager.jsonDecoder.decode(WomenOfMarvel.self, from: response)
+
+                DispatchQueue.main.async {
+                    print(details)
+                    successHandler(details)
+                }
+            } catch {
+                print("Response:", response)
+                print(error)
+            }
+
+        }
+
+         */
 
 
         /*
