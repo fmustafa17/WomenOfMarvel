@@ -89,7 +89,6 @@ struct APIManager {
 
         let path = "v1/public/comics/\(comicID)"
 
-
         //        let fullRequestURL = baseURL + path + "?apikey=" + apiKey
         let fullRequestURL = "https://gateway.marvel.com/v1/public/comics/1590"
 
@@ -99,8 +98,8 @@ struct APIManager {
                     return
                 }
 
-                // use `responseObject` here
-            print(responseObject)
+            // use `responseObject` here
+//            print(responseObject)
         }
 
 

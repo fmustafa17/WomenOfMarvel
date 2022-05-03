@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         viewModel.$comicDetails
            .receive(on: DispatchQueue.main)
            .sink { comicDetails in
-              print(1)
+              print("comicDetails", comicDetails)
            }
            .store(in: &cancellables)
     }
