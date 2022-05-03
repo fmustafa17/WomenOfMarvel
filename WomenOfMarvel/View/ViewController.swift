@@ -10,10 +10,15 @@ import Combine
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var comicBookCover: UIImageView!
+
+    @IBOutlet weak var comicBookTitle: UILabel!
+
+    @IBOutlet weak var comicBookDescription: UILabel!
+
     var viewModel = WomenOfMarvelViewModel()
 
     private var cancellables: Set<AnyCancellable> = []
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +32,12 @@ class ViewController: UIViewController {
 
         viewModel.$comicDetails
            .receive(on: DispatchQueue.main)
-           .sink { comicDetails in
-              print("comicDetails", comicDetails)
+           .sink { [weak self] comicDetails in
+               // Update the UI when we get the data
+               self?.comicBookTitle.text = comicDetails?.data.results[0].title
+               self?.comicBookDescription.text =  comicDetails?.data.results[0].textObjects[0].text
            }
            .store(in: &cancellables)
     }
 
-
 }
-

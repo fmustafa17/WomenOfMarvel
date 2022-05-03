@@ -23,6 +23,7 @@
 		AD06884628207FCA002A0846 /* WomenOfMarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884528207FCA002A0846 /* WomenOfMarvelViewModel.swift */; };
 		AD06884828209280002A0846 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884728209280002A0846 /* Config.swift */; };
 		AD06884A28209661002A0846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884928209661002A0846 /* Constants.swift */; };
+		AD06884C2820E79D002A0846 /* ComicBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884B2820E79D002A0846 /* ComicBookView.swift */; };
 		E44F7BDA56ECAC4710EC8464 /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A331F0E4AE11C749DD9CB1C /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		AD06884528207FCA002A0846 /* WomenOfMarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewModel.swift; sourceTree = "<group>"; };
 		AD06884728209280002A0846 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		AD06884928209661002A0846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD06884B2820E79D002A0846 /* ComicBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookView.swift; sourceTree = "<group>"; };
 		B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF0E50FF74C0F21EEDB973 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0688122820763C002A0846 /* ViewController.swift */,
+				AD06884B2820E79D002A0846 /* ComicBookView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				AD0688112820763C002A0846 /* SceneDelegate.swift in Sources */,
 				AD06884628207FCA002A0846 /* WomenOfMarvelViewModel.swift in Sources */,
 				AD06884A28209661002A0846 /* Constants.swift in Sources */,
+				AD06884C2820E79D002A0846 /* ComicBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
