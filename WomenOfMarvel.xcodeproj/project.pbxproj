@@ -26,6 +26,7 @@
 		AD06884C2820E79D002A0846 /* ComicBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884B2820E79D002A0846 /* ComicBookView.swift */; };
 		AD06884F2822557E002A0846 /* WomenOfMarvelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884E2822557E002A0846 /* WomenOfMarvelViewModelTests.swift */; };
 		AD06885228225892002A0846 /* WomenOfMarvelViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */; };
+		AD06885728225DA9002A0846 /* ComicBookOverviewPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06885628225DA9002A0846 /* ComicBookOverviewPageObject.swift */; };
 		E44F7BDA56ECAC4710EC8464 /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A331F0E4AE11C749DD9CB1C /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		AD06884B2820E79D002A0846 /* ComicBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookView.swift; sourceTree = "<group>"; };
 		AD06884E2822557E002A0846 /* WomenOfMarvelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewModelTests.swift; sourceTree = "<group>"; };
 		AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewControllerTests.swift; sourceTree = "<group>"; };
+		AD06885628225DA9002A0846 /* ComicBookOverviewPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookOverviewPageObject.swift; sourceTree = "<group>"; };
 		B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF0E50FF74C0F21EEDB973 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 		AD06882E2820763E002A0846 /* WomenOfMarvelUITests */ = {
 			isa = PBXGroup;
 			children = (
+				AD06885328225D74002A0846 /* PageObjects */,
 				AD06882F2820763E002A0846 /* WomenOfMarvelUITests.swift */,
 				AD0688312820763E002A0846 /* WomenOfMarvelUITestsLaunchTests.swift */,
 			);
@@ -216,6 +219,14 @@
 				AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD06885328225D74002A0846 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				AD06885628225DA9002A0846 /* ComicBookOverviewPageObject.swift */,
+			);
+			path = PageObjects;
 			sourceTree = "<group>";
 		};
 		C06E27E359573E99427FA493 /* Pods */ = {
@@ -498,6 +509,7 @@
 			files = (
 				AD0688302820763E002A0846 /* WomenOfMarvelUITests.swift in Sources */,
 				AD0688322820763E002A0846 /* WomenOfMarvelUITestsLaunchTests.swift in Sources */,
+				AD06885728225DA9002A0846 /* ComicBookOverviewPageObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
