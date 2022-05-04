@@ -9,7 +9,7 @@ import Combine
 import Kingfisher
 import UIKit
 
-class ViewController: UIViewController {
+class WomenOfMarvelViewController: UIViewController {
 
     @IBOutlet weak var comicBookCover: UIImageView!
 
@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var comicBookDescription: UILabel!
 
     var viewModel = WomenOfMarvelViewModel()
+
+    var fullImagePath: String! = ""
 
     private var cancellables: Set<AnyCancellable> = []
 
@@ -40,33 +42,26 @@ class ViewController: UIViewController {
 
                // due to insecure URL, added workaround in the Info.plist
                // source: https://stackoverflow.com/questions/32631184/the-resource-could-not-be-loaded-because-the-app-transport-security-policy-requi
-               self?.loadImageViaKingfisher(with: comicDetails?.data.results[0].thumbnail.path,
-                                            of: comicDetails?.data.results[0].thumbnail.thumbnailExtension)
+               self?.fullImagePath = self?.viewModel.getFullImageURLString(with: comicDetails?.data.results[0].thumbnail.path,
+                                                                           of: comicDetails?.data.results[0].thumbnail.thumbnailExtension)
+
+               self?.loadImageViaKingfisher(with: (self?.fullImagePath)!)
             }
            .store(in: &cancellables)
     }
 
-    func loadImageViaKingfisher(with urlPath: String?, of type: String?) {
+    func loadImageViaKingfisher(with urlString: String) {
 
-        guard let imageUrlPath = urlPath else {
-            print("Nil image url path was given")
+        guard let imagePath = fullImagePath, !imagePath.isEmpty else {
+            print("Nil or empty fullImagePath was passed. Value:", fullImagePath!)
             return
         }
 
-        guard let thumbnailExtension = type  else {
-            print("Nil thumbnailExtension was given")
-            return
-        }
-
-        let fullImagePath = imageUrlPath + "." + thumbnailExtension
-
-        let imageUrl = URL(string: fullImagePath)
-        print(fullImagePath)
-        print(imageUrl)
+        let imageUrl = URL(string: urlString)
 
         // Check if the Comic Book Image is already in the cache. If so, use the cached image
-        if ImageCache.default.isCached(forKey: fullImagePath) {
-            ImageCache.default.retrieveImage(forKey: fullImagePath) { result in
+        if ImageCache.default.isCached(forKey: imagePath) {
+            ImageCache.default.retrieveImage(forKey: imagePath) { result in
                 switch result {
                 case .success(let value):
                     self.comicBookCover.kf.setImage(with: imageUrl)
