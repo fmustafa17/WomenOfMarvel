@@ -11,7 +11,7 @@
 		A6F040F718C99AD3AE83FD8C /* Pods_WomenOfMarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */; };
 		AD06880F2820763C002A0846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06880E2820763C002A0846 /* AppDelegate.swift */; };
 		AD0688112820763C002A0846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0688102820763C002A0846 /* SceneDelegate.swift */; };
-		AD0688132820763C002A0846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0688122820763C002A0846 /* ViewController.swift */; };
+		AD0688132820763C002A0846 /* WomenOfMarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0688122820763C002A0846 /* WomenOfMarvelViewController.swift */; };
 		AD0688162820763C002A0846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0688142820763C002A0846 /* Main.storyboard */; };
 		AD0688182820763E002A0846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0688172820763E002A0846 /* Assets.xcassets */; };
 		AD06881B2820763E002A0846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0688192820763E002A0846 /* LaunchScreen.storyboard */; };
@@ -25,6 +25,7 @@
 		AD06884A28209661002A0846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884928209661002A0846 /* Constants.swift */; };
 		AD06884C2820E79D002A0846 /* ComicBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884B2820E79D002A0846 /* ComicBookView.swift */; };
 		AD06884F2822557E002A0846 /* WomenOfMarvelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06884E2822557E002A0846 /* WomenOfMarvelViewModelTests.swift */; };
+		AD06885228225892002A0846 /* WomenOfMarvelViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */; };
 		E44F7BDA56ECAC4710EC8464 /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A331F0E4AE11C749DD9CB1C /* Pods_WomenOfMarvel_WomenOfMarvelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,7 @@
 		AD06880B2820763C002A0846 /* WomenOfMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomenOfMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD06880E2820763C002A0846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD0688102820763C002A0846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD0688122820763C002A0846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD0688122820763C002A0846 /* WomenOfMarvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewController.swift; sourceTree = "<group>"; };
 		AD0688152820763C002A0846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD0688172820763E002A0846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD06881A2820763E002A0846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		AD06884928209661002A0846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AD06884B2820E79D002A0846 /* ComicBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookView.swift; sourceTree = "<group>"; };
 		AD06884E2822557E002A0846 /* WomenOfMarvelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewModelTests.swift; sourceTree = "<group>"; };
+		AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenOfMarvelViewControllerTests.swift; sourceTree = "<group>"; };
 		B5294CF39B3E9FBD60EAF73C /* Pods_WomenOfMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF0E50FF74C0F21EEDB973 /* Pods_WomenOfMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WomenOfMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 		AD0688242820763E002A0846 /* WomenOfMarvelTests */ = {
 			isa = PBXGroup;
 			children = (
+				AD06885028225879002A0846 /* View */,
 				AD06884D28225564002A0846 /* ViewModel */,
 				AD0688252820763E002A0846 /* WomenOfMarvelTests.swift */,
 			);
@@ -193,7 +196,7 @@
 		AD0688422820792A002A0846 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD0688122820763C002A0846 /* ViewController.swift */,
+				AD0688122820763C002A0846 /* WomenOfMarvelViewController.swift */,
 				AD06884B2820E79D002A0846 /* ComicBookView.swift */,
 			);
 			path = View;
@@ -205,6 +208,14 @@
 				AD06884E2822557E002A0846 /* WomenOfMarvelViewModelTests.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD06885028225879002A0846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD06885128225892002A0846 /* WomenOfMarvelViewControllerTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C06E27E359573E99427FA493 /* Pods */ = {
@@ -459,7 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0688132820763C002A0846 /* ViewController.swift in Sources */,
+				AD0688132820763C002A0846 /* WomenOfMarvelViewController.swift in Sources */,
 				AD06880F2820763C002A0846 /* AppDelegate.swift in Sources */,
 				AD06884428207A10002A0846 /* APIManager.swift in Sources */,
 				AD06884828209280002A0846 /* Config.swift in Sources */,
@@ -475,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD06885228225892002A0846 /* WomenOfMarvelViewControllerTests.swift in Sources */,
 				AD0688262820763E002A0846 /* WomenOfMarvelTests.swift in Sources */,
 				AD06884F2822557E002A0846 /* WomenOfMarvelViewModelTests.swift in Sources */,
 			);

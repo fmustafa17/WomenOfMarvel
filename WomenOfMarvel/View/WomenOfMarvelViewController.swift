@@ -9,7 +9,7 @@ import Combine
 import Kingfisher
 import UIKit
 
-class ViewController: UIViewController {
+class WomenOfMarvelViewController: UIViewController {
 
     @IBOutlet weak var comicBookCover: UIImageView!
 
