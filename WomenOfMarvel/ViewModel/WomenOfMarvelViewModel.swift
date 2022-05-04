@@ -23,4 +23,19 @@ class WomenOfMarvelViewModel: ObservableObject {
             print("Error occurred: ", error)
         }
     }
+
+    func getFullImageURLString(with urlPath: String?, of type: String?) -> String {
+        guard let imageUrlPath = urlPath else {
+            print("Nil image url path was given")
+            return ""
+        }
+
+        guard let thumbnailExtension = type  else {
+            print("Nil thumbnailExtension was given")
+            return ""
+        }
+
+        let fullImagePath = imageUrlPath + "." + thumbnailExtension
+        return fullImagePath
+    }
 }
