@@ -3,7 +3,7 @@ Displays the Women of Marvel Comic book in a iOS application made with UIKit.
 This also includes unit tests and a UI test that uses the [Builder Pattern](https://www.geeksforgeeks.org/builder-design-pattern/).
 
 ## Technical Notes
-This application uses the free [Marvel Develeoper API](developer.marvel.com). The [Combine framework](https://developer.apple.com/documentation/combine) is used for data binding.
+This application uses the free [Marvel Developer API](developer.marvel.com). The [Combine framework](https://developer.apple.com/documentation/combine) is used for data binding.
 
 ### Apple Libraries Used
 [CommonCrypto](https://developer.apple.com/security/) is used in order to return a hash string that is required to be sent in the query parameters of the Marvel Developer API.
@@ -17,8 +17,8 @@ This application uses the free [Marvel Develeoper API](developer.marvel.com). Th
 
 ### How to add your developer keys
 
-In order to not expose our sensitive data, I've created a file called Config.swift that holds the values of my public and private API keys.
-This config file is then added to the .gitignore file. If you do accidently add sensitive data to your repo, consider it compromised and generate a new API key.
+In order to not expose our sensitive data, I've created a file called `Config.swift` that holds the values of my public and private API keys.
+This config file is then added to the .gitignore file. If you do accidently commit and push sensitive data to your repo, consider it compromised and generate a new API key.
 
 How to replicate the config file:
 
