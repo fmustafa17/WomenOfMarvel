@@ -3,10 +3,11 @@ Displays the Women of Marvel Comic book in a iOS application made with UIKit.
 This also includes unit tests and a UI test that uses the [Builder Pattern](https://www.geeksforgeeks.org/builder-design-pattern/).
 
 ## Technical Notes
-This application uses the free [Marvel Developer API](developer.marvel.com). The [Combine framework](https://developer.apple.com/documentation/combine) is used for data binding.
+This application uses the free [Marvel Developer API](developer.marvel.com). 
 
 ### Apple Libraries Used
-[CommonCrypto](https://developer.apple.com/security/) is used in order to return a hash string that is required to be sent in the query parameters of the Marvel Developer API.
+- [CommonCrypto](https://developer.apple.com/security/) is used in order to return a hash string that is required to be sent in the query parameters of the Marvel Developer API.
+- [The Combine framework](https://developer.apple.com/documentation/combine) is used for data binding.
 
 ### Third Party Dependencies
 [Cocoapods](https://cocoapods.org/) is used for integrating third party libraries.
